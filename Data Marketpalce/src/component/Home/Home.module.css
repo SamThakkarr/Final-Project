@@ -1,0 +1,42 @@
+/* Home.module.css */
+
+.home {
+  background-color: #131213; /* Light gray background color */
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.home h1 {
+  color: #007bff; /* Blue header color */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home p {
+  color: #555; /* Dark gray text color */
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.home a {
+  color: #007bff; /* Blue link color */
+  text-decoration: underline;
+}
+
+.home a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+.home #last {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #28a745; /* Green background color */
+  color: #9c1515; /* White text color */
+  padding: 10px 0; /* Add some padding for better visibility */
+}
+

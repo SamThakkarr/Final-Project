@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/sam_project/static/style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAML Model Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter the test case</h1>
+        <p>Model Used: {{ model }}</p>
+        <p>Prediction accuracy: {{ accuracy }}</p>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <div class="feature-container">
+                {% for feature in features %}
+                    <label for="{{ feature }}">{{ feature }}:</label>
+                    <input type="text" name="{{ feature }}" required><br>
+                {% endfor %}
+            </div>
+            <button class="predict-button" type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

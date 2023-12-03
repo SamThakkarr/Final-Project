@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/sam_project/static/style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAML Model Predictor</title>
+    <script>
+        function triggerFileInput() {
+            document.getElementById('fileInput').click();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>FLAML Model Predictor</h1>
+        <form action="/test_case" method="post" enctype="multipart/form-data">
+            <button type="button" class="file-label" onclick="triggerFileInput()">Choose a CSV file:</button>
+            <input type="file" name="file" id="fileInput" accept=".csv" style="display: none;" required>
+            <button type="submit" class="primary-button">Train Model on Dataset</button>
+        </form>
+    </div>
+</body>
+</html>
+
